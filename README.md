@@ -2,8 +2,8 @@
 Meus exercícios na formação Java e Orientação a Objeto da Alura.
 
 Cursos concluidos até o momento:
-  Java JRE e JDK: Escreva o seu primeiro código com Eclipse
-  Java OO: Introdução à Orientação a Objetos
-  Java Polimorfismo: Entenda herança e interfaces
+  Java JRE e JDK: Escreva o seu primeiro código com Eclipse,
+  Java OO: Introdução à Orientação a Objetos,
+  Java Polimorfismo: Entenda herança e interfaces.
   
   Mais em breve...
