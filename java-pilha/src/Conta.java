@@ -2,7 +2,7 @@
 public class Conta {
 	double saldo;
 	
-	void deposita() {}
+	void deposita() throws MinhaExcecao{}
 
 	public boolean saca(double valor) {
 		if(this.saldo >= valor) {
