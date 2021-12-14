@@ -1,4 +1,4 @@
-public class Fluxo {
+public class FluxoComError {
 
     public static void main(String[] args) {
         System.out.println("Ini do main");
@@ -20,10 +20,8 @@ public class Fluxo {
 
     private static void metodo2() {
         System.out.println("Ini do metodo2");
-        
-        throw new MinhaExcecao("Deu pau!!!");
-        
-        
-        //System.out.println("Fim do metodo2");
+        System.out.println("Chamando metodo2");
+        metodo2();
+        // Aprendi a origem do nome do site Stackoverflow, hahahaha
     }
 }
