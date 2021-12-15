@@ -4,7 +4,7 @@ public abstract class Conta {
 
      double saldo;
     private int agencia;
-    private int numero;
+    protected int numero;
     private Cliente titular;
     private static int total = 0;
     
@@ -71,5 +71,10 @@ public abstract class Conta {
     public static int getTotal(){
         return Conta.total;
     }
+    
+	@Override
+	public String toString() {
+		return "ContaCorrente, Numero: " + numero;
+	}
 
 }
