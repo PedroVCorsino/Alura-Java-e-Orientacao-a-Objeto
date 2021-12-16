@@ -74,7 +74,7 @@ public abstract class Conta {
     
 	@Override
 	public String toString() {
-		return "ContaCorrente, Numero: " + numero;
+		return "Conta, Numero: " + numero;
 	}
 
 }
