@@ -10,7 +10,7 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
-public class Teste {
+public class TesteOrdenacao {
 
         public static void main(String[] args) {
 
@@ -43,31 +43,20 @@ public class Teste {
             lista.add(cc2);
             lista.add(cc3);
             lista.add(cc4);
-            
-            //Function Object
-//            NumeroDaContaComparator2 comparator = new NumeroDaContaComparator2();
-//            lista.sort(comparator);
-            
-            lista.sort(new Comparator<Conta>() { //Classe anonima
-            	@Override
-            	public int compare(Conta c1, Conta c2) {
-            		return Integer.compare(c1.getNumero(), c2.getNumero());
-            	}
-			});
-            
-            lista.sort(new Comparator<Conta>() {
-
-            	@Override
-            	public int compare(Conta c1, Conta c2) { //Classe anonima
-            		String nomeC1 = c1.getTitular().getNome();
-            		String nomeC2 = c2.getTitular().getNome();
-            		
-            		return nomeC1.compareTo(nomeC2);
-            		
-            	}
-            	
-            });
+                
+            for (Conta conta : lista) {
+            	System.out.println(conta + " " + conta.getTitular().getNome());
+			}
+                
+            lista.sort(new TitularDaContaComparator());
               
+            Collections.sort(lista, new NumeroDaContaComparator());// metodos legados
+            // ainda são uteis
+            
+            Collections.sort(lista);
+                
+            System.out.println("--------------------------");
+                
             for (Conta conta : lista) {
             	System.out.println(conta + ", " + conta.getTitular().getNome());
 			}
@@ -76,11 +65,34 @@ public class Teste {
 
 }
 
-//class NumeroDaContaComparator2 implements Comparator<Conta>{
-//
-//	@Override
-//	public int compare(Conta c1, Conta c2) {
-//		return Integer.compare(c1.getNumero(), c2.getNumero());
-//	}
-//	
-//}
+class TitularDaContaComparator implements Comparator<Conta>{
+
+	@Override
+	public int compare(Conta c1, Conta c2) {
+		String nomeC1 = c1.getTitular().getNome();
+		String nomeC2 = c2.getTitular().getNome();
+		
+		return nomeC1.compareTo(nomeC2);
+		
+	}
+	
+}
+
+class NumeroDaContaComparator implements Comparator<Conta>{
+
+	@Override
+	public int compare(Conta c1, Conta c2) {
+
+		return Integer.compare(c1.getNumero(), c2.getNumero());
+		
+//		if (c1.getNumero() < c2.getNumero()) {
+//			return -1;
+//		}
+//		
+//		if (c1.getNumero() > c2.getNumero()) {
+//			return 1;
+//		}
+//		return 0;
+	}
+	
+}
