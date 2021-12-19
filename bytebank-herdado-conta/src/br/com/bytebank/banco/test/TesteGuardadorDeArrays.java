@@ -19,7 +19,7 @@ public class TesteGuardadorDeArrays {
 		int tamanho = guardador.getQuantidadeDeElementos();
 		System.out.println(tamanho);
 		
-		Object ref = guardador.getReferencia(0);
+		Conta ref = (Conta) guardador.getReferencia(0);
 		System.out.println(ref);
 		
 
