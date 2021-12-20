@@ -1,12 +1,28 @@
-package br.com.bytebank.banco.modelo;
+package br.com.alura.java.io.teste;
 
 import java.io.Serializable;
 
+/**
+ * Classe que representa um cliente no Bytebank.
+ *
+ * @author Nico Steppat
+ * @version 0.1
+ */
 public class Cliente implements Serializable {
 
-    private String nome;
+	private static final long serialVersionUID = 4L;
+	
+	private String nome;
     private String cpf;
     private String profissao;
+    
+    public String getNomeCpf() {
+    		return nome + ", " + cpf;
+    }
+    
+    public String getNomeCpfProfissao() {
+		return nome + ", " + cpf + ", " + profissao;
+    }
 
     public String getNome() {
         return nome;
