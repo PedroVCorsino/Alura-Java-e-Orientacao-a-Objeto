@@ -6,6 +6,7 @@ Cursos concluidos até o momento:
   Java OO: Introdução à Orientação a Objetos,
   Java Polimorfismo: Entenda herança e interfaces,
   Java Exceções: Aprenda a criar, lançar e controlar exceções,
-  Java e java.util: Coleções, Wrappers e Lambda expressions.
+  Java e java.util: Coleções, Wrappers e Lambda expressions,
+  Java e java.io: Streams, Reader e Writers.
   
   Mais em breve...
