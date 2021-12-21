@@ -51,6 +51,10 @@ public class Curso {
 		return tempoTotal;
 	}
 	
+	public boolean estaMatriculado(Aluno aluno) {
+		return alunos.contains(aluno);
+	}
+	
 	@Override
 	public String toString() {
 		return "Curso: " + nome + ", tempo total: " + this.getTempoTotal() + ", Aulas: " + this.aulas + "]";

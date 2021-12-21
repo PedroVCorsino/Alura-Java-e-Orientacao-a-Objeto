@@ -11,4 +11,5 @@ public class TestandoEmptySet {
         nomes.add("Paulo"); //o que acontece aqui?
     }
 
+    
 }

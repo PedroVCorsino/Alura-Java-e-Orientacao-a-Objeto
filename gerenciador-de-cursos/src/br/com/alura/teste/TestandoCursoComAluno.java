@@ -25,6 +25,16 @@ public class TestandoCursoComAluno {
 		
 		curso.getAlunos().forEach(aluno -> System.out.println(aluno));
 		
+		Aluno turini = new Aluno("Rodrigo Turini", 34672);
+		
+		System.out.println(curso.estaMatriculado(turini));
+		
+		
+		System.out.println((a1.equals(turini)));
+		
+		System.out.println(a1.hashCode() == turini.hashCode());
+		
+		
 	}
-
+ 
 }
