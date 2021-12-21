@@ -1,6 +1,7 @@
 package br.com.alura.teste;
 
-import java.util.List;
+import java.util.Iterator;
+import java.util.Set;
 
 import br.com.alura.modelo.Aluno;
 import br.com.alura.modelo.Aula;
@@ -29,10 +30,18 @@ public class TestandoCursoComAluno {
 		
 		System.out.println(curso.estaMatriculado(turini));
 		
-		
 		System.out.println((a1.equals(turini)));
 		
 		System.out.println(a1.hashCode() == turini.hashCode());
+		
+		Set<Aluno> alunos = curso.getAlunos();
+		Iterator<Aluno> iterador = alunos.iterator(); 
+		
+		while (iterador.hasNext()) {
+			Aluno proximo = iterador.next();
+			System.out.println(proximo);
+		}
+		
 		
 		
 	}
