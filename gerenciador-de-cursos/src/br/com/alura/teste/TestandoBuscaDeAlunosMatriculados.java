@@ -1,13 +1,10 @@
 package br.com.alura.teste;
 
-import java.util.Iterator;
-import java.util.Set;
-
 import br.com.alura.modelo.Aluno;
 import br.com.alura.modelo.Aula;
 import br.com.alura.modelo.Curso;
 
-public class TestandoCursoComAluno {
+public class TestandoBuscaDeAlunosMatriculados {
 
 	public static void main(String[] args) {
 		Curso curso = new Curso("Dominando as coleções do Java", "Paulo Silveira");
@@ -24,26 +21,9 @@ public class TestandoCursoComAluno {
 		curso.matricula(a2);
 		curso.matricula(a3);
 		
-		curso.getAlunos().forEach(aluno -> System.out.println(aluno));
-		
-		Aluno turini = new Aluno("Rodrigo Turini", 34672);
-		
-		System.out.println(curso.estaMatriculado(turini));
-		
-		System.out.println((a1.equals(turini)));
-		
-		System.out.println(a1.hashCode() == turini.hashCode());
-		
-		Set<Aluno> alunos = curso.getAlunos();
-		Iterator<Aluno> iterador = alunos.iterator(); 
-		
-		while (iterador.hasNext()) {
-			Aluno proximo = iterador.next();
-			System.out.println(proximo);
-		}
-		
-		
-		
+		System.out.println("Quem é o aluno com matricula 5617?");
+		Aluno aluno = curso.buscaMatriculado(5617);
+		System.out.println("Aluno: " + aluno);
 	}
- 
+
 }
