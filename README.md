@@ -8,6 +8,6 @@ Cursos concluidos até o momento:
   Java Exceções: Aprenda a criar, lançar e controlar exceções,
   Java e java.util: Coleções, Wrappers e Lambda expressions,
   Java e java.io: Streams, Reader e Writers,
-  Java Collections: Dominando Listas, Sets e Mapas.
-  
-  Mais em breve...
+  Java Collections: Dominando Listas, Sets e Mapas,
+  Java moderno: Tire proveito dos novos recursos do Java 8,
+  TDD e Java: Testes automatizados com JUnit.
