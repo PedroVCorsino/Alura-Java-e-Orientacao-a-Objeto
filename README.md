@@ -1,4 +1,6 @@
-# Alura-Java-e-Orientacao-a-Objeto
+# Alura-Java-e-Orientacao-a-Objeto 
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" height="50" width="150" alt="Java Logo" /></a>
+
 Meus exercícios na formação Java e Orientação a Objeto da Alura.
 
 Cursos concluidos até o momento:
