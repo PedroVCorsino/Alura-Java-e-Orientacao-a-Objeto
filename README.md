@@ -5,7 +5,7 @@
 ## Descrição
 Meus exercícios na formação Java e Orientação a Objeto da [Alura](https://www.alura.com.br/ "Go to Alura").
 
-#### Cursos concluidos até o momento:
+#### Cursos concluidos:
   - Java JRE e JDK: Escreva o seu primeiro código com Eclipse,
   - Java OO: Introdução à Orientação a Objetos,
   - Java Polimorfismo: Entenda herança e interfaces,
